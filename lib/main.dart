@@ -4,9 +4,18 @@ import 'package:flutter/material.dart';
 import 'package:Demo/pages/BottomBar/home.dart';
 import 'package:Demo/pages/BottomBar/two.dart';
 import 'package:Demo/pages/BottomBar/setting.dart';
+import 'package:flutter/services.dart';
 
 void main() {
-  runApp(MaterialApp(home: MyApp()));
+  runApp(
+    MaterialApp(
+      home: MyApp(),
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white,
+      ),
+      debugShowCheckedModeBanner: true,
+    )
+  );
 }
 
 class MyApp extends StatefulWidget {
@@ -29,7 +38,10 @@ class _BottomBarState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _pages[_currentIndex],
+      body: Container(
+        color: Colors.red,
+        child: _pages[_currentIndex],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         items: [
