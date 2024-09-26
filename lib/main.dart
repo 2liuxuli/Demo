@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 // 底部Tab类
-import 'package:flutterapp01/pages/BottomBar/home.dart';
-import 'package:flutterapp01/pages/BottomBar/two.dart';
-import 'package:flutterapp01/pages/BottomBar/setting.dart';
+import 'package:Demo/pages/BottomBar/home.dart';
+import 'package:Demo/pages/BottomBar/two.dart';
+import 'package:Demo/pages/BottomBar/setting.dart';
 
 void main() {
   runApp(MaterialApp(home: MyApp()));
